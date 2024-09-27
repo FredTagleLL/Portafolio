@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fred Tagle - Fronted Developer</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header" id="home">
+            <input id="menu" type="checkbox">
+            <label class="header__menu" for="menu"><svg width="40" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="5" rx="2.5" fill="#333"/>
+                <rect y="12.5" width="40" height="5" rx="2.5" fill="#333"/>
+                <rect y="25" width="40" height="5" rx="2.5" fill="#333"/>
+            </svg>
+            </label>
+            <nav class="header__nav"> 
+                <ul class="header__list">
+                    <li class="header__item"><a href="#home" class="header__link">Home</a></li>
+                    <li class="header__item"><a href="#projects" class="header__link">Projects</a></li>
+                    <li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
+                    <li class="header__item"><a href="#formation" class="header__link">Formación</a></li>
+                    <li class="header__item"><a href="#contacto" class="header__link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header__home">
+                <h1 class="home__title">Fred Tagle LLontop<br> Fronted Developer</h1>
+                <p class="home__parrafo">Soy un programador frontend en constante aprendizaje, especializado en el desarrollo de páginas web. Me apasiona explorar nuevas tecnologías y mejorar mis habilidades en diseño web y programación. En mi tiempo libre, me gusta dar rienda suelta a mi creatividad desarrollando juegos sencillos, lo que me permite experimentar con lógica de programación y diseño interactivo.
+                </p>
+                <nav class="home__nav">
+                    <ul class="home__list">
+                        <li class="home__item">
+                            <a href="https://github.com/FredTagleLL" target="_blank" class="home__link">Github</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="projects main__section" id="projects">
+                <h2 class="section__title">Proyectos</h2>
+                <div class="section__container">
+                    <article class="section__article">
+                        <header class="article__header">
+                            <h3 class="article__title">Generador de Contraseñas</h3>
+                        </header>
+                        <figure class="article__img">
+                            <img src="img/generator.png" alt="Generador de Contraseñas">
+                        </figure>
+                        <p class="article__parrafo">
+                            El generador de contraseñas permite elegir entre mayúsculas, minúsculas, números y caracteres especiales.
+                        </p>
+                        <a target="_blank" href="https://fredtaglell.github.io/generator-password/" class="article__link">Dale un Vistazo</a>
+                    </article>
+                </div>
+            </section>
+            <section class="skill main__section" id="skills">
+                <h2 class="section__title">Skill</h2>
+                <div class="section__container">
+                    <div class="section__skill">
+                        <img class="section__img" src="img/html.png" alt="logo html">
+                        <span class="section__txt">Html</span>
+                    </div>
+                    <div class="section__skill">
+                        <img class="section__img" src="img/css-file 1.png" alt="logo css">
+                        <span class="section__txt">Css</span>
+                    </div>
+                    <div class="section__skill">
+                        <img class="skill__img" src="img/js.png" alt="logo javascript">
+                        <span class="skill__txt">Javascript</span>
+                    </div>
+                </div>
+            </section>
+            <section class="formation main__section" id="formation">
+                <h2 class="section__title">Formación</h2>
+                <div class="section__container">
+                    <figure class="section__formation">
+                        <img class="formation__img" src="img/Fred Harol Tagle Llontop - Formación Principiante en Programación G7 - ONE- Alura_page-0001.jpg" alt="certificado">
+                    </figure>
+                    <figure class="section__formation">
+                        <img class="formation__img" src="img/Fred Harol Tagle Llontop - Formación Lógica de programación con JavaScript - Alura_page-0001.jpg" alt="certificado">
+                    </figure>
+                    <figure class="section__formation">
+                        <img class="formation__img" src="img/Fred Harol Tagle Llontop - Formación - Alura_page-0001.jpg" alt="certificado">
+                    </figure>
+                </div>
+            </section>
+            <section class="contacto main__section" id="contacto">
+                <h2 class="section__title">Contacto</h2>
+                <div class="section__contacto">
+                    <form action="" class="form">
+                        <div class="form__caja caja-text">
+                            <input spellcheck="false" type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form__caja caja-email">
+                            <input spellcheck="false" required type="email" name="email" id="email" >
+                        </div>
+                        <div class="form__caja caja-mensaje">
+                            <textarea name="mensaje" id="mensaje" required></textarea>
+                        </div>
+                        <input class="btn-enviar" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
